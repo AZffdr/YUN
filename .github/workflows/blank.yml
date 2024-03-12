@@ -34,4 +34,5 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
         run: |
           npm install
+          pnpm i jsencrypt@3.3.1
           node app.js
