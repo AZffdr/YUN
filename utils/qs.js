@@ -1,8 +1,8 @@
 const qs = require('qs')
 global.navigator = {appName: 'nodejs'}; // fake the navigator object
 global.window = {}; // fake the window object
-//const jsencrypt = require('jsencrypt');
-const jsencrypt = require('JSEncrypt/bin/jsencrypt');
+const jsencrypt = require('jsencrypt');
+//const jsencrypt = require('JSEncrypt/bin/jsencrypt');
 const pubkey = require('./pubkey')
 const encrypt = new jsencrypt()
 encrypt.setPublicKey(pubkey)
