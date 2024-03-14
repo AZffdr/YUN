@@ -19,10 +19,8 @@ system: '5.1.1'
 const signdata = qs.stringify({
   address: process.env.ADDRESS,
   address_name: process.env.ADDRESS_NAME,
-  // latitude: encrypt.encrypt(process.env.LATITUDE),
-  // longitude: encrypt.encrypt(process.env.LONGITUDE),
-  latitude: 'm3Z8t0Gr+6gfyScdychjW0hQutziuEqZlOZWtal9doUPHLLCFRM7/LdMfpblonPJpMnQHNPbewdlAV4Dw0WS/u4EskZnrLaF59FOIfZXnxHL2Psbsl+K8fAC1po1lUt/m4YNUI/jcHHJydyjc1R8R9y15A3gk3hefhV5T0roCNE=',
-  longitude: 'jRv53wUB9ntubjn/frr6hgqYXvPhvQV45WnG22S5L3M8iV0zSQnYwjotmpfeqMZAviO2UqBq9wPQn0j+etl/zrufU0IfY/X3fEDUOvXQpkVDHnwjVbO3JMiUY3kNVW0500vZf334G1WofE/O9u0y+M4rwBhCeoaGQKpR+G7kK7s=',
+  latitude: encrypt.encrypt(process.env.LATITUDE),
+  longitude: encrypt.encrypt(process.env.LONGITUDE),
   remark: 0,
   change_sign_resource: 0
 })
