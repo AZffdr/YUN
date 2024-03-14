@@ -29,10 +29,8 @@ function login() {
 //签到提交
 function sign(token) {
   const signApi = qs.signApi(token)
-  console.log(signdata)
   axios.post(signApi, signdata, { headers }).then((res) => {
     if (res && res.data) {
-      console.log(res)
       console.log(res.data.code + ',' + res.data.message)
       wechatSend('习讯云签到提交', res.data.message)
       // sendEmail('习讯云签到提交', res.data.message)
