@@ -8,7 +8,7 @@ const loginApi = qs.loginApi
 
 // 签到并提交每日体温报告 
 login().then((token) => {
-  setTimeout("sign(token)",3000)
+  setTimeout("sign",3000,token)
   // sign(token)
   //studentReportInfo(token)
 })
